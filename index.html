@@ -15,6 +15,7 @@
             display : flex;
             justify-content: center;
             align-items: center;
+            box-sizing: border-box;
             border-bottom: 1px solid grey;
         
         }
@@ -31,7 +32,7 @@
             width: 25%;
             border-right: 2px solid grey;
             overflow-y: scroll;
-            height: 80vh;
+            height: 60vh;
         }
         ul.first {
             position: relative;
@@ -57,14 +58,17 @@
          
         }
         .detail  {
+            box-sizing: border-box;
             padding-left: 20px;
             padding-right: 20px;
+            padding-bottom: 20px;
+            
             font-size: 30px;
             width: 75%;
             display : flex;
             flex-direction: column;
             overflow-y: scroll;
-            height: 80vh;
+            height: 60vh;
         }
         
         .content .number{
@@ -91,6 +95,16 @@
         }
         footer p {
          
+        }
+        .footer-part {
+            font-size: 50px;
+            height: 20vh;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border-top: 1px solid grey;
+
         }
 
     </style>
@@ -127,16 +141,20 @@
                 <li><a>19</a></li>
                 <li><a name="a20">20</a></li>
             </ul>
+           
         </aside>
 
         <div class="detail">
             <p class="content"></p>
-            <footer>
-                <p>Hello from footer</p>
-            </footer>
+           
         </div>
         
     </div> 
+    <div class="footer-part">
+            
+            <p>Hello from footer</p>
+              
+        </div>
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
