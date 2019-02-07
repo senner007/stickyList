@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display : flex;
+            flex-direction: row;
+        }
+        body {
+            overflow-y:hidden;
+        }
+        aside {
+            width: 25%;
+            border: 2px solid grey;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        ul.first {
+            position: relative;
+        }
+        ul.list {
+            position: relative;
+            display : flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            padding: 0;
+            margin: 0;
+        
+        }
+        li {
+            min-height: 100px;
+            font-size: 30px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid grey;
+            cursor: pointer;
+         
+        }
+        .detail  {
+          
+            font-size: 30px;
+            width: 75%;
+            display : flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .content {
+        
+        }
+        footer {
+       
+            min-height: 200px;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        footer p {
+         
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <ul class="first">
+                <li><a href="#a1">Jump to 1</a></li>
+                <li><a href="#a10">Jump to 10</a></li>
+                <li><a href="#a20">Jump to 20</a></li>
+            </ul>
+            <ul class="list">
+                <li><a name="a1">1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>4</a></li>
+                <li><a>5</a></li>
+                <li><a>6</a></li>
+                <li><a>7</a></li>
+                <li><a>8</a></li>
+                <li><a>9</a></li>
+                <li><a name="a10">10</a></li>
+                <li><a>11</a></li>
+                <li><a>12</a></li>
+                <li><a>13</a></li>
+                <li><a>14</a></li>
+                <li><a>15</a></li>
+                <li><a>16</a></li>
+                <li><a>17</a></li>
+                <li><a>18</a></li>
+                <li><a>19</a></li>
+                <li><a name="a20">20</a></li>
+            </ul>
+        </aside>
+
+        <div class="detail">
+            <p class="content"></p>
+            <footer>
+                <p>Hello from footer</p>
+            </footer>
+        </div>
+        
+    </div> 
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
