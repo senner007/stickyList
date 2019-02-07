@@ -1,3 +1,5 @@
+
+
 document.querySelector('ul.list').addEventListener('click', function (e) {
 
     var target = e.target.nodeName == 'A' ? $(e.target).text() : $(e.target).find('a').text()
@@ -35,3 +37,7 @@ Integer vitae justo eget magna fermentum iaculis. Sagittis purus sit amet volutp
 Rhoncus mattis rhoncus urna neque viverra justo nec. Augue neque gravida in fermentum et sollicitudin ac orci. Tristique magna sit amet purus gravida quis blandit turpis. Pellentesque id nibh tortor id aliquet. Lacinia quis vel eros donec ac odio tempor orci. Consectetur libero id faucibus nisl. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Pharetra vel turpis nunc eget lorem dolor sed viverra. Habitasse platea dictumst vestibulum rhoncus. Libero enim sed faucibus turpis.
 
 Mattis nunc sed blandit libero volutpat. Aliquam vestibulum morbi blandit cursus risus. Molestie nunc non blandit massa enim nec dui nunc mattis. Hac habitasse platea dictumst quisque sagittis purus sit amet volutpat. Viverra aliquet eget sit amet. Et pharetra pharetra massa massa ultricies mi. Sem nulla pharetra diam sit amet. Eu scelerisque felis imperdiet proin fermentum. Aliquam purus sit amet luctus venenatis lectus. Faucibus in ornare quam viverra orci sagittis. Congue mauris rhoncus aenean vel. Senectus et netus et malesuada fames. Vestibulum lorem sed risus ultricies tristique nulla aliquet. Senectus et netus et malesuada fames ac turpis egestas sed. A arcu cursus vitae congue mauris rhoncus.`
+
+
+$('.detail p.content').html("<p class='number'>" + "Sticky header " + 1 + "</p>" + lorem);
+$('.detail').animate({scrollTop: '0px'}, 200);
