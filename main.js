@@ -3,7 +3,7 @@ document.querySelector('ul.list').addEventListener('click', function (e) {
     console.log(e.target)
     var target = $(e.target).find('a').text()
     console.log(target)
-    $('.detail p.content').html("<p>" + target + "</p>" + lorem);
+    $('.detail p.content').html("<p class='number'>" + target + "</p>" + lorem);
     $('.detail').animate({scrollTop: '0px'}, 200);
 
 })
