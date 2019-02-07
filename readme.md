@@ -1,1 +1,1 @@
-- [Demo](https://www.nielshtg.dk/stickyList) 
+- [Demo](https://www.nielshtg.dk/stickyList/footer) 
