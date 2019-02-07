@@ -2,7 +2,7 @@ document.querySelector('ul.list').addEventListener('click', function (e) {
 
     var target = e.target.nodeName == 'A' ? $(e.target).text() : $(e.target).find('a').text()
 
-    $('.detail p.content').html("<p class='number'>" + target + "</p>" + lorem);
+    $('.detail p.content').html("<p class='number'>" + "Sticky header " + target + "</p>" + lorem);
     $('.detail').animate({scrollTop: '0px'}, 200);
 
 })
