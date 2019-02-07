@@ -1,8 +1,7 @@
 document.querySelector('ul.list').addEventListener('click', function (e) {
-    console.log($)
-    console.log(e.target)
-    var target = $(e.target).find('a').text()
-    console.log(target)
+
+    var target = e.target.nodeName == 'A' ? $(e.target).text() : $(e.target).find('a').text()
+
     $('.detail p.content').html("<p class='number'>" + target + "</p>" + lorem);
     $('.detail').animate({scrollTop: '0px'}, 200);
 
